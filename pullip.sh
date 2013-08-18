@@ -1,0 +1,2 @@
+cd ~/serverip
+git pull

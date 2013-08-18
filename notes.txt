@@ -1,0 +1,1 @@
+export UNISONLOCALHOSTNAME in .bashrc to handle ip changes (all machines)

@@ -1,0 +1,6 @@
+MAILTO=""
+@reboot $HOME/common/scripts/server/pullip.sh
+1 * * * * $HOME/common/scripts/server/pullip.sh
+
+@reboot $HOME/common/scripts/server/unison.sh common
+* * * * * $HOME/common/scripts/server/unison.sh common
