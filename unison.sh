@@ -1,3 +1,6 @@
+cd $HOME/serverip
+git pull
+
 options="-batch -ui text"
 local="-root $HOME"
 serverip=$(cat $HOME/serverip/ip.txt)
