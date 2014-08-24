@@ -1,3 +1,3 @@
 #!/bin/bash
-sh ~/common/scripts/server/pullip.sh
-sshfs $(cat ~/serverip/ip.txt):/ ~/server
+sh $HOME/.homesick/repos/unison-server/pullip.sh
+sshfs $(cat $HOME/.homesick/repos/serverip/ip.txt):/ ~/server
