@@ -4,6 +4,7 @@ ignore = Name .~*
 ignore = Name *.o
 ignore = Name *.pyc
 ignore = Name *.class
+ignore = Name *.hi
 
 ignore = Name .dropbox*
 ignore = Path .SyncTrash/*
