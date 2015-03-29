@@ -6,5 +6,9 @@ ignore = Name *.pyc
 ignore = Name *.class
 ignore = Name *.hi
 
+ignore = Name cabal.sandbox.config
+ignore = Name .cabal-sandbox
+ignore = Name dist
+
 ignore = Name .dropbox*
 ignore = Path .SyncTrash/*
