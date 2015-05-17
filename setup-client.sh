@@ -13,6 +13,10 @@ homeshick clone git@bitbucket.org:vladfi1/serverip.git
 # clone this repo (unison-server)
 homeshick clone git@github.com:vladfi1/unison-server.git
 
+# dotfiles
+homeshick clone git@bitbucket.org:vladfi1/dotfiles.git
+homeshick link dotfiles
+
 # install unison
 
 if [ -d /etc/apt ]; then
@@ -25,26 +29,6 @@ fi
 
 INSTALL="sudo $INSTALL -y install"
 $INSTALL unison
-
-# make unison profile
-
-if [ ! -d $HOME/.unison ]; then
-	mkdir $HOME/.unison
-fi
-
-cat <<EOF > $HOME/.unison/ignore
-ignore = Name *~
-ignore = Name .~*
-
-ignore = Name *.o
-ignore = Name *.pyc
-ignore = Name *.class
-
-ignore = Name .dropbox*
-ignore = Path .SyncTrash/*
-EOF
-
-echo ignore > $HOME/.unison/ignore.prf
 
 # unison aliases
 echo "alias ssh-server=$HOME/.homesick/repos/unison-server/ssh.sh" >> $HOME/.bashrc
