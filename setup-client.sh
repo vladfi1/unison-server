@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # should automate ssh stuff?
+ssh-keygen
 
 # homeshick
 git clone https://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
@@ -8,6 +9,7 @@ source $HOME/.homesick/repos/homeshick/homeshick.sh
 
 # serverip on bitbucket
 homeshick clone git@bitbucket.org:vladfi1/serverip.git
+ssh-copy-id -i $HOME/.ssh/id_rsa.pub $(cat $HOME/.homesick/repos/serverip/ip.txt)
 
 # clone this repo (unison-server)
 homeshick clone git@github.com:vladfi1/unison-server.git
