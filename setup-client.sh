@@ -4,8 +4,7 @@
 
 # homeshick
 git clone https://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
-printf '\nsource "$HOME/.homesick/repos/homeshick/homeshick.sh"' >> $HOME/.bashrc
-printf '\nsource "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"' >> $HOME/.bashrc
+source $HOME/.homesick/repos/homeshick/homeshick.sh
 
 # serverip on bitbucket
 homeshick clone git@bitbucket.org:vladfi1/serverip.git
@@ -30,13 +29,7 @@ fi
 INSTALL="sudo $INSTALL -y install"
 $INSTALL unison
 
-# unison aliases
-echo "alias ssh-server=$HOME/.homesick/repos/unison-server/ssh.sh" >> $HOME/.bashrc
-echo "alias sync-manual=$HOME/.homesick/repos/unison-server/unison-manual.sh" >> $HOME/.bashrc
-echo "alias sync-folder=$HOME/.homesick/repos/unison-server/unison.sh" >> $HOME/.bashrc
-echo "alias sync-common=\"sync-folder common\"" >> $HOME/.bashrc
-
-echo "export UNISONLOCALHOSTNAME=$USER@$HOSTNAME" >> $HOME/.bashrc
+echo $(hostname) > $HOME/.unison/LOCALHOSTNAME
 
 source $HOME/.bashrc
 echo $UNISONLOCALHOSTNAME
