@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # should automate ssh stuff?
-ssh-keygen
+# ssh-keygen
 
 # homeshick
 git clone https://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
