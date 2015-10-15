@@ -5,6 +5,8 @@ ignore = Name *.o
 ignore = Name *.pyc
 ignore = Name *.class
 ignore = Name *.hi
+ignore = Name *.dyn_hi
+ignore = Name *.dyn_o
 
 ignore = Name cabal.sandbox.config
 ignore = Name .cabal-sandbox
