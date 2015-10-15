@@ -1,2 +1,2 @@
-@hourly $HOME/common/scripts/server/puship.sh
-@reboot $HOME/common/scripts/server/puship.sh
+@hourly $HOME/Repos/unison-server/puship.sh
+@reboot $HOME/Repos/unison-server/puship.sh
